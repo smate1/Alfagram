@@ -15,7 +15,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	background: #fff;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -835,13 +835,18 @@ body {
 	.container {
 		padding: 0 20px;
 	}
+  	.footer::after,
+	.footer::before {
+		display: none;
+	}
+  
 	.controls::after {
 		bottom: -10%;
 	}
 	/* Приховуємо фоновий елемент на мобільних */
 	.main::before {
-		/* display: none; */
-		width: 150%;
+		display: none;
+		/* width: 150%; */
 	}
 
 	.footer__inner {
@@ -1751,10 +1756,6 @@ body {
 		display: none;
 	}
 
-	.footer::after,
-	.footer::before {
-		display: none;
-	}
 
 	.footer__content::after {
 		display: none;
