@@ -15,7 +15,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	background: #fff;
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -835,11 +835,11 @@ body {
 	.container {
 		padding: 0 20px;
 	}
-  	.footer::after,
+	.footer::after,
 	.footer::before {
 		display: none;
 	}
-  
+
 	.controls::after {
 		bottom: -10%;
 	}
@@ -1755,7 +1755,6 @@ body {
 	.controls::after {
 		display: none;
 	}
-
 
 	.footer__content::after {
 		display: none;
