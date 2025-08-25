@@ -892,7 +892,7 @@ body {
 
 	.header__link {
 		font-size: 24px;
-		font-weight: 600;
+		font-weight: 600 !important;
 	}
 
 	.header__inner {
