@@ -1,5 +1,37 @@
 // FAQ Accordion functionality
 document.addEventListener('DOMContentLoaded', function () {
+	// Бургер меню
+	const burger = document.querySelector('.header__burger')
+	const menu = document.querySelector('.header__menu')
+	const body = document.body
+
+	if (burger && menu) {
+		burger.addEventListener('click', function () {
+			burger.classList.toggle('active')
+			menu.classList.toggle('active')
+			body.classList.toggle('no-scroll')
+		})
+
+		// Закрытие меню при клике на ссылку
+		const menuLinks = menu.querySelectorAll('.header__link')
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function () {
+				burger.classList.remove('active')
+				menu.classList.remove('active')
+				body.classList.remove('no-scroll')
+			})
+		})
+
+		// Закрытие меню при клике вне его
+		document.addEventListener('click', function (e) {
+			if (!burger.contains(e.target) && !menu.contains(e.target)) {
+				burger.classList.remove('active')
+				menu.classList.remove('active')
+				body.classList.remove('no-scroll')
+			}
+		})
+	}
+
 	const accordionItems = document.querySelectorAll('.questions__accordion-item')
 
 	accordionItems.forEach(item => {
