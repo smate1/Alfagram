@@ -10,10 +10,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
+  <script src="./js/main.js"></script>
+
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -56,9 +57,9 @@
         </div>
         <div class="header__inner">
           <div class="header__content">
-            <h2 class="header__title title animate__animated animate__fadeInUp"><span>A</span>lfagram <br> Telegram для
+            <h2 class="header__title title"><span>A</span>lfagram <br> Telegram для
               детей</h2>
-            <p class="header__description animate__animated animate__fadeInUp animate__delay-1s">
+            <p class="header__description">
               Сохраняем личное — защищаем главное
             </p>
             <p class="header__text">
@@ -70,7 +71,7 @@
               ребенка и
               вашими персональными настройками.
             </p>
-            <div class="header__buttons animate__animated animate__fadeInUp animate__delay-3s">
+            <div class="header__buttons">
               <a href="#" class="header__button">
                 <img src="./images/app-store.svg" alt="app-store">
               </a>
@@ -79,24 +80,23 @@
               </a>
             </div>
           </div>
-          <div class="header__img-wrapper animate__animated animate__fadeInRight animate__delay-1s"><img
-              src="./images/header-content.png" alt="header-img" class="header__img">
+          <div class="header__img-wrapper"><img src="./images/header-content.png" alt="header-img" class="header__img">
           </div>
         </div>
         <div class="header__items">
-          <div class="header__item animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="header__item">
             <img src="./images/header-item-1.svg" alt="header-item-img" class="header__item-img">
             <p class="header__item-text">
               Добавление нового контакта, вступление в группу или просмотр каналов требуют одобрения родителя
             </p>
           </div>
-          <div class="header__item animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="header__item">
             <img src="./images/header-item-2.svg" alt="header-item-img" class="header__item-img">
             <p class="header__item-text">
               ИИ в режиме реального времени фильтрует текст, изображение, видео и аудио
             </p>
           </div>
-          <div class="header__item animate__animated animate__fadeInUp animate__delay-3s">
+          <div class="header__item">
             <img src="./images/header-item-3.svg" alt="header-item-img" class="header__item-img">
             <p class="header__item-text">
               ИИ уберет из поиска неподходящие возрасту ребенка каналы и отобразит размытыми нежелательные медиа
@@ -108,14 +108,14 @@
     </header>
     <section class="standards">
       <div class="container">
-        <h2 class="standards__title title animate__animated animate__fadeInUp">
+        <h2 class="standards__title title">
           В <span>A</span>lfragram соблюдены такие же высокие стандарты защиты, обработки и хранения данных, <span>как и
             в
             Telegram</span>
         </h2>
         <div class="standards__inner">
           <div class="standards__img-wrapper">
-            <img src="./images/standards-img.png" alt="standards-img" class="standards__img">
+            <img src="./images/standards-img.png" alt="standards-img" class="standards__img" data-animate="float">
           </div>
           <div class="standards__content">
             <div class="standards__item">
@@ -149,7 +149,7 @@
     </section>
     <section class="controls">
       <div class="container">
-        <h2 class="controls__title title animate__animated animate__fadeInUp">
+        <h2 class="controls__title title">
           Родитель управляет
         </h2>
         <div class="controls__items">
@@ -223,7 +223,7 @@
               </a>
             </div>
           </div>
-          <img src="./images/zombi.png" alt="footer-img" class="footer__img">
+          <img src="./images/zombi.png" alt="footer-img" class="footer__img" data-animate="bounce">
         </div>
         <div class="footer__copy">
           © 2025 alfagram.org. All rights reserved.
@@ -266,7 +266,6 @@
 
 
 
-  <script src="./js/main.js"></script>
 </body>
 
 </html>
